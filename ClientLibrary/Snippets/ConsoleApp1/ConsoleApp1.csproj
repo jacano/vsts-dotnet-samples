@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClientSample.cs" />
+    <Compile Remove="ClientSampleContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.TeamFoundationServer.Client" Version="15.122.1-preview" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.Client" Version="15.122.1-preview" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.InteractiveClient" Version="15.122.1-preview" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>
